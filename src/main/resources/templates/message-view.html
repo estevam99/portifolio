@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(98, 158, 226);
+
+        }
+        #mainBox{
+            margin: 2vh;
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            background-color: rgb(86, 140, 202);
+            width: 40vh;
+            height: 45vh;
+        }
+        p{
+            margin-top: 0.9vh;
+            text-decoration: none;
+            color: black;
+            
+        }
+        img{
+            height: 20vh;
+            width: 20vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainBox">
+        <img src="src\main\resources\templates\EuBonito.png" alt="">
+        <h1 th:text="${Nome}"></h1>
+        <p th:text="${Tel}"></p>
+        <p th:text="${Email}"></p>
+        <p th:text="${DataNasc}"></p>
+        <a href="https://github.com/Estevam993"><p th:text="${Github}"> </p></a>
+        <a href="https://www.linkedin.com/in/joão-vitor-estevam-462224235/"><p th:text="${Linkedin}"></p></a>
+    </div>       
+</body>
+</html>
